@@ -6,7 +6,7 @@ const App = () => {
   const[theme, setTheme] = React.useState('light');
 
   return (
-    <div className='min-h-screen bg-white'>
+    <div className='dark:bg-black relative'>
       <Navbar theme={theme} setTheme={setTheme} />
     </div>
   )
