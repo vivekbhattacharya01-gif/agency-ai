@@ -7,7 +7,7 @@ const ThemeToggleBtn = ({theme, setTheme}) => {
         const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
             setTheme( theme || (prefersDarkMode ? 'dark' : 'light')  )  
             
-        }, []);
+        }, );
 
     useEffect(() => {
         if (theme === 'dark') {
